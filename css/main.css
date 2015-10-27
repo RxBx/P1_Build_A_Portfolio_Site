@@ -1,0 +1,184 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Basic element styling */
+* {
+    font-family: "Lato", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+a:link {
+    color: #bcbbbb;
+    text-decoration: none;
+}
+
+h1 {
+    color: #747704;
+    font-size: 3.5em;
+    font-weight: 200;
+    margin: .6em 0 .1em;
+    text-align: right;
+}
+
+h2 {
+    color: #bbcbbb;
+    font-weight: 300;
+    font-size: 1.8em;
+    margin: 0 .5em;
+}
+
+h3 {
+    color: #747704;
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: .2em 0;
+    text-align: center;
+}
+
+h4 {
+    color: #747704;
+    font-size: 1.3em;
+    font-weight: 300;
+    margin: 0 0 .5em;
+    text-align: right;
+}
+
+hr {
+    background-color: #bbcbbb;
+    border: 0;
+    height: 3px;
+    width: 100%;
+}
+
+/* Grid-Row-Col formatting */
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* Styling components of page */
+.header {
+    margin: 0 0 .3em;
+}
+
+.logo-box {
+    margin: auto;
+}
+
+.logo {
+    padding: 10%;
+    max-width: 133px;
+}
+
+.featured-work {
+    margin: 0 0 .3em;
+}
+
+/* spacing between normal app content columns */
+.app {
+    padding: 0 1%;
+}
+
+/* allows first app column to be flush with left side, while maintaining content size */
+.app:first-of-type {
+    padding-right: 2%;
+    padding-left: 0;
+}
+
+/* allows last app column to be flush with right side, while maintaining content size */
+.app:last-of-type {
+    padding-right: 0;
+    padding-left: 2%;
+}
+
+
+/* Screen size media queries */
+/* maintains 960px body width once screen goes beyond 960px, centers content */
+@media screen and (min-width: 960px) {
+    body {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* reduces header text size when screen is below 501px to keep lines simple */
+    h1 {
+        font-size: 2em;
+    }
+    h4 {
+        font-size: 1em;
+    }
+    /* spreads each app column across full screen on screens below 501px for ease of viewing */
+    .app {
+        width: 100%;
+    }
+}
